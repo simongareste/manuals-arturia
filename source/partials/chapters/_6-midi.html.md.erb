@@ -1,0 +1,127 @@
+
+
+# MIDI
+
+In addition to the keyboard, almost all MatrixBrute's knobs, sliders,
+and wheels send and respond to MIDI, so you can record and edit their
+movements in a DAW running on a computer. That makes the instrument
+useful as a hands-on controller for external instruments, not just a
+master keyboard.
+
+MIDI can go in and out the USB port, the 5-pin DIN ports, both, or
+neither. All the MIDI settings are in Arturia's MIDI Control Center
+Mac/PC program, which you download from www.Arturia.com. (See below.)
+
+The sequencer and arpeggiator can lock to MIDI clock. They send MIDI
+notes, so you can record and edit the notes they send in a DAW. Since
+the LFOs can lock to MIDI and then be patched anywhere, effectively
+everything on the instrument can be in tempo.
+
+## MIDI Continuous Controller Assignments
+
+![](images/media/image66.png)
+
+In the graphic above, the numbers superimposed over knobs are all MIDI
+Continuous Controllers (CC), so for example the Modulation wheel
+sends/receives MIDI CC\#1, and Macro knob 1 to its right sends/receives
+CC\#11 (Expression).
+
+While the Pitch wheel is unmarked, it is active; pitch isn't a CC in the
+MIDI protocol - it's a separate command in the protocol. If you connect
+expression pedals 1 or 2 to the rear panel, they have duplicate CC
+assignments to Macro knobs 3's and 4's (to the left of the keyboard).
+The Sustain pedal input in the rear is CC\#64, which is standard.
+
+##  MIDI Control Center settings
+
+The MIDI settings are all using the MIDI Control Center's **Device**
+tab. Again, download the software from www.Arturia.com.
+
+![](images/media/image67.png)
+
+- *Input MIDI Channels* - All, 1-16, none. MaxiBrute sends and receives on one 16-channel MIDI port.
+
+- *Output MIDI Channel* - 1-16. Choose between the 16 MIDI channels to send on.
+
+- *MIDI clock source* - USB, MIDI, Sync. The USB port is the MaxiBrute's
+ built-in MIDI interface, which you connect to a Mac or PC; MIDI is the
+ 5-pin DIN MIDI in.
+ 
+- Use the Sync port to interface with pre-MIDI devices, such as old Korg
+ and Roland drum machines. The following types are supported: the
+ default is 1 pulse per step, 2 pulse per quarter note (Korg Volca), 24
+ pulses per quarter note (Roland DIN), and 48 pulses per quarter note
+ DIN.
+- *MIDI param send and receive* - Turns MIDI from the panel on and off.
+ The keyboard still sends notes when it's off. You might not want the
+ knobs and sliders to trigger or respond to MIDI from another
+ instrument while you're playing.
+
+- *MIDI out select* - The choices are Off, USB, MIDI, or MIDI + USB. USB
+ has the advantage of connecting directly to a Mac or PC without a MIDI
+ interface, but you can run MIDI cables over longer distances. Also
+ note that if you save a DAW project that used the USB connection, then
+ load it again later, the DAW may get upset if the MatrixBrute isn't
+ connected and turned on; it'll be looking for a MIDI interface it
+ doesn't see.
+ 
+- *Local control* - Local off means all the panel controls and the
+ keyboard get sent out over MIDI, but they're disconnected from the
+ MatrixBrute. This is convenient if you're working with a DAW; you'll
+ hear the keyboard and controls on the MatrixBrute when its track is
+ selected and MIDI is being sent back to trigger it, but you won't hear
+ it when DAW tracks assigned to other instruments are selected. You can
+ then play other instruments from the MatrixBrute without it playing
+ along. Also, the MatrixBrute can be playing back MIDI you've recorded
+ while you play other instruments from its keyboard and controls.
+
+
+- *Program Change Receive* - MIDI Program Change commands switch
+ Presets. That can be convenient, or you can turn it off to prevent
+ Presets from changing when you don't want them to.
+
+
+- *Pedal 1, Pedal 2, Footswitch polarity* - The choices are Normal and
+ Inverted. Some manufacturer's pedals are reversed, so higher is lower
+ and off is on. This corrects for that.
+
+
+- *Pot mode* - Because the knobs are 270 pots and not 360 degree
+ encoders, they don't necessarily reflect their underlying settings,
+ there are three choices for how they behave when sending MIDI.
+
+
+- *Jump* means a knob sends the value of its physical position as soon
+ as you move it, regardless of its underlying setting. If the
+ underlying setting is 12, the knob happens to be at 3, and you move it
+ to 4, it will jump to 4. (These are not actual numbers.)
+
+- *Hook* waits until you move a knob past its current setting to
+ "catch" (hook) it before sending anything. This is the default mode.
+
+- *Scaled* increases or decreases the actual setting regardless of
+ where the knob is. So if the actual value is 12 and you move the knob
+ from 3 to 4, the actual value will go to 13. Scaled allows you to
+ increment or decrement the knob value. The drawback is if the knob is
+ at a high or low extreme, you obviously cannot move it further. In
+ this case you need to turn the knob and the value will have to go
+ either negative or positive first.
+
+- *Velocity curve* - This lets you adjust the keyboard response to your
+ playing style and preference.
+
+ ![](images/media/image68.png)
+
+- *Linear* (the default) has an even response across the dynamic
+ range;
+
+- *Log* requires the least amount of force to play louder notes, but
+ it's harder to control the dynamics at lower levels;
+
+- *Exponential* is less jumpy at lower dynamic levels, but it takes
+ more force to reach high dynamic levels.
+
+- *Sequencer/Arp Sends Notes* - (On/Off) The sequencer/arpeggiator can
+ send MIDI notes to trigger other instruments or to be recorded in a
+ DAW.
+ 

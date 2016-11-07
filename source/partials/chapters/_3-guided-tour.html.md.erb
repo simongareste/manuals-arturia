@@ -1,0 +1,254 @@
+
+Guided Tour
+===========
+
+The following walkthrough will give you a solid foundation for the
+MatrixBrute. After this you'll have a good understanding of what you're
+doing when you create and shape sounds.
+
+Subtractive synthesis overview
+------------------------------
+
+MatrixBrute is an analog subtractive synthesizer. Subtractive synthesis
+starts by generating basic waveforms, and then you remove what you don't
+want to sculpt the timbre you're after. MatrixBrute can also use
+external sounds as basic waveforms, and then process them through its
+engines.
+
+![](images/media/image10.jpg)
+
+The basic signal flow is simple:
+
+- VCO (voltage-controlled oscillators) **\[page \#\]** generate various
+kinds of waveforms. These are on a black background on the MatrixBrute
+panel;
+
+- VCF (voltage-controlled filters) **\[page \#\]** shape the harmonic
+content, but they can also self-oscillate to become sound sources. For
+that reason, they're also on a black background;
+
+- An extensive list of modifiers, identified by a charcoal-colored
+background, move the other parameters around over time in various ways.
+In some cases, modulators can control other modulators.
+
+One of the main features in the MatrixBrute is... its Matrix (hence the
+name). This is an electronic modulation-routing patchbay, so everything
+that could be a source can be routed to any and all possible destination
+parameters. Some modulation sources you move physically, such as the
+modulation wheel; others can either run freely or lock to the internal
+sequencer's clock. Or they can lock to MIDI.
+
+Triggers from the 4-octave keyboard and the sequencer/arpeggiator - as
+well as incoming MIDI notes - could also be considered modifiers when
+they're doing more than just playing notes.
+
+The final module in the MatrixBrute's audio path is an analog effects
+section, and the output levels and master tuning are separate from the
+synthesis engine.
+
+Throughout an analog synthesizer, frequencies are controlled by voltage.
+MatrixBrute uses 24V per octave, so for example from C3 to C4 is a 24V
+increase, and from C3 to F\#3 is a 12V increase.
+
+Initializing a Preset
+---------------------
+
+![](images/media/image11.png)
+
+Start with an initialized sound: **Panel + Preset**.
+
+Hands On
+--------
+
+MatrixBrute has more than one of every type of module, but it's only
+necessary to go through one of each for this bird's-eye view. So we'll
+just use one VCO, one VCF, one LFO, one envelope.
+
+### VCO 1
+
+Play the keyboard, and you'll hear a buzzy sound. If you don't, push
+Preset to toggle to the initialized sound.
+
+![](images/media/image12.png)
+
+Turn **VCO 1** up all the way, everything else all the way down in the
+mixer. These are all the waveforms available for processing, and we're
+only working with VCO 1.
+
+Keep pressing VCO 1's **Filter** button until it's only routed to the
+red one, the Steiner filter. Oscillators must be routed to a filter to
+be audible.
+
+![](images/media/image13.png)
+
+Now that you're hearing VCO 1 on its own, move the **Coarse** knob to
+hear what it sounds like at different pitches.
+
+There are four different waveforms in this VCO - a Sub oscillator that
+sounds an octave below the other three. Each wave generator has a level
+knob on the bottom row and an enhancer for it on the top.
+
+Turn all four down, then bring each one in one at a time so you can
+hear the different waveforms. Try the enhancers to hear their effects on
+the waveforms.
+
+For now, leave everything at 12 o'clock. It doesn't matter that this
+isn't a great sound.
+
+### VCF 1
+
+![](images/media/image14.png)
+
+Now to shape the sound's timbre with VCF 1.
+
+Sweep the **Master Cutoff** knob while playing. (VCF 1's Cutoff knob
+has the same effect when you're only listening to one filter; the Master
+controls both together.)
+
+With the initialized setting, the filter is set to lowpass, meaning it
+removes high frequencies. Cutoff selects the *corner frequency*, which
+is where it starts operating. This has a radical effect on the timbre of
+the sound.
+
+Notice that there's no sound when you turn the way down (because you're
+blocking all the frequencies from passing). You'd think the VCO, the
+sound waveform generator, would be what turn the sound on and off - and
+it does - but sounds can also be controlled by opening up a filter.
+
+Bring up the **Brute Factor** knob, and experiment it, and with
+**Drive**. It's not necessary to point out that you're adding some real
+testosterone to the sound. The **Resonance** control adds more
+brightness. You can leave VCF 1 set where it sounds good.
+
+The sound in its present state is just on/off, which is what you want
+for, say, organ sounds. We'll adjust that next.
+
+### ENV 2
+
+![](images/media/image15.png)
+
+Envelopes shape voltage levels over time while you're triggering a note
+on the keyboard. While it can be routed to additional places in the MOD
+Matrix (see below), ENV 2 is always hardwired to control the
+MatrixBrute's VCAs. VCA stands for voltage-controlled amplifiers, which
+means all the sound sources that appear in the Mixer, i.e. the VCOs
+and/or any external signals plugged into the back of the instrument.
+
+- Start by raising ENV 2's **Attack** slider all the way up and down to
+"catch" the fader's actual position. Play the keyboard while gradually
+raising it. This has the effect of fading in the note. A quarter of the
+way seems like a reasonable setting.
+
+- The middle two stages of the envelope, **Decay** and **Sustain**, are
+set to one-size-fits-all settings in the initialized patch we started
+from. Attack is how long it takes the voltage to fade in to its initial
+level. From there, Decay sets how long it takes to glide to its Sustain
+level, which can be higher or lower than the Attack level (usually
+lower).
+
+- Now for the **Release** stage of this 4-stage envelope
+(Attack/Decay/Sustain/Release, or ADSR). This sets how fast the note
+fades out when you release the key. Again, a quarter of the way up might
+be a reasonable setting.
+
+- Notice how every note plays at the same volume, no matter how hard you
+play the keyboard? The **Velo/VCA** fader lets you dial in how
+responsive the envelope is to keyboard *velocity*, which is what
+electronic keyboards use to determine how hard you intended to play.
+
+When the slider is all the way down, every note plays at full volume;
+all the way up, and you have to slam the keyboard to get it to speak up.
+See whether you like three quarters of the way up.
+
+The MatrixBrute has two other Envelopes. ENV 1 is hardwired to the two
+filters' Cutoffs. It works the same way, so you can experiment with its
+effect.
+
+### LFO/Aftertouch/Matrix
+
+Next, how to route modulation sources in the Matrix, including the LFOs.
+
+Low Frequency Oscillators (LFOs) are periodic waveforms just like VCOs,
+only they're very low - which by definition means they're very slow.
+Rather than being used as sound sources, LFOs 1 & 2 are used as
+modifiers to add movement to other parameters. (However, VCO3 is
+intended to be used as both a sound source and a modifier.)
+
+![](images/media/image16.png)
+
+Press the **MOD** button. The Matrix becomes an electronic patchbay.
+
+We're going to route LFO 1 to VCO1's pitch. Depending on the settings,
+this can create anything from a vibrato effect, to subtle movement, to
+some really crazy stuff.
+
+Like all modifiers (other than the hardwired envelopes), LFO 1 has to be
+routed before it does anything. Modulation sources are on the rows on
+the left of the Matrix, destinations are columns across the top.
+
+![](images/media/image17.png)
+
+LFO 1 is five rows down, VCO 1 Pitch is the first column, so simply
+push the button where the two intersect. The button lights purple,
+indicating it's the one that's selected; if you click on another button
+to select additional modulation routings, it'll turn blue to show it's
+been assigned.
+
+![](images/media/image18.png)
+
+LFO 1 still won't modulate the pitch until you dial in a **MOD
+Amount**. Try + or -13, a fairly radical pitch modulation, so you can
+hear the effect.
+
+![](images/media/image19.png)
+
+You'll also need to set LFO 1's **Phase** and **Rate** knobs where
+they're audible, so try 12 o'clock as a starting point (as usual, after
+sweeping them to catch their actual voltage positions).
+
+The pitch should oscillate up and down when you play.
+
+Increase the **MOD Amount** to + or - 64, and it'll sound sci-fi. This
+is a good setting to experiment with the **Wave** buttons to understand
+what they do.
+
+MatrixBrute's LFOs have a choice of seven LFO waveforms, and you may be
+surprised to see that they sound just like they look. Some of the same
+waveforms are available in the VCOs, where they go by much faster, so
+this is a good way to get a handle on how they sound.
+
+Now the **MOD Amount** back to about 13, a vibrato effect.
+
+The MatrixBrute's keys are pressure-sensitive. This is called
+Aftertouch, a controller source when you push down the keys after the
+note has sounded. We're going to use Aftertouch to increase LFO 1's rate
+a lot to bring in some reedy growl.
+
+Aftertouch is next to the letter J, but LFO 1's rate isn't one of the 12
+hardwired modulation destinations. Columns 13 - 16 are user-assignable
+to pretty much any parameter on the instrument.
+
+![](images/media/image20.png)
+
+- Hold down button **13**, then wiggle **LFO 1 Rate** a little. The LCD
+display will darken and lighten, and LFO 1 Rate will appear in its
+display to indicate that it's assigned.
+
+![](images/media/image21.png)
+
+- Now touch the button at the intersection of Aftertouch (J) and 13. Set
+its MOD Amount to + 99.
+
+Play a fairly low note, then press the key more to bring in aftertouch,
+and you'll hear LFO 1 adding some soft growl.
+
+### Analog Effects
+
+![](images/media/image22.png)
+
+The operation instructions cover the MatrixBrute's Analog Effects in
+detail **\[page \#\]**, but just to "finish" the sound and bring this
+module to your attention, turn the **Wet/Dry** knob up a little to add
+some space. Use the **Mode** button to try other effects.
+
+

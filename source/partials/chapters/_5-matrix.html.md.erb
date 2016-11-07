@@ -1,0 +1,379 @@
+# The Matrix
+
+![](images/media/image43.png)
+
+The Matrix is a 16 x 16 (256-button) grid that has three modes.
+
+![](images/media/image44.png)
+
+**PRESET** (pink)**, SEQ** (red)**,** and **MOD** (blue) are big buttons
+to select the active Matrix mode:
+
+- **PRESET**, in which the Matrix is used to save and recall patches in
+16 banks (rows A - P) of 16 patches each (columns 1-16). The patches can
+also include sequences.
+
+- **SEQ**, a 64-step sequencer that also functions as an arpeggiator.
+
+- **MOD**, an electronic patching matrix (hence the name "MatrixBrute")
+that routes 16 modulation sources (rows A-P) to 16 destinations (columns
+1 - 16).
+
+##  PRESET mode
+
+![](images/media/image45.png)
+
+
+### Panel 
+
+Panel toggles between the physical and loaded preset positions.
+
+When in this mode, the positions of the knobs determine the sound. This
+is the mode to use if you are looking to get 1:1 feedback of parameters
+and the sound you are editing.
+
+**IMPORTANT:** *to hear a preset you've loaded, the* **Panel** *button
+must be off!*
+
+### Recalling internal presets
+
+**To recall one of the 256 internal presets:**
+
+In PRESET mode, simply select its button. The banks are rows A - P on
+the left, and presets within each bank are columns 1-16. To select, say,
+patch B3, go two rows down and three columns across; B 03 will appear in
+the numeric display. Alternatively, use the **&lt;** and **&gt;**
+buttons underneath the numeric display to scroll up and down through the
+presets.
+
+### Saving a preset
+
+**To save the Panel or edited Preset in an internal location:**
+
+Press **Save** + \[**desired bank/channel location**, using the Matrix
+buttons or **&lt;** and **&gt;** buttons\].
+
+## MOD mode
+
+![](images/media/image46.png)
+
+The **MOD**ulation Matrix is an electronic patchbay that routes all the
+MatrixBrute's modulation sources to any or all possible destinations.
+Think of this as a grid of patch cords, each with an attenuator that
+allows for positive or negative modulation. Every parameter that it
+would make sense to modulate - pretty much anything with a knob or fader
+- can be a destination.
+
+The 16 modulation sources are in rows A - P, and destinations are in
+columns 1 - 16. Destinations 1 - 12 are hardwired, and 13 - 16 are
+freely assignable.
+
+### Create a modulation path
+
+**To assign a modulation source to a destination parameter:**
+
+1. In MOD mode, select a modulator and a destination by pressing any
+button in the grid.
+
+ - The current selection lights up pink.
+
+ - You can select from 0 to all 16 destinations for each modulation
+source, and each destination parameter can be modulated by 0 to 16
+sources.
+
+ - Modulation "patch points" light up blue when they're not the current
+selection.
+
+2. Set a positive or negative modulation amount (± 99 steps) for the
+current selection with the **Mod Amount** knob. This is an offset from
+the input voltage.
+
+Negative values decrease a destination's MOD Amount as the input voltage
+goes up, positive values increase it. For example, you might want
+Aftertouch to lower VCO 1's pitch a small amount while increasing VCO
+1's Metal a lot.
+
+### Setting the modulation amount
+
+When **MOD Amount** is centered, only the red LED at 12 o'clock is lit.
+White LEDs in either direction indicate the knob's position when it's
+off-center; each dot gets progressively brighter when you've moving
+toward it.
+
+![](images/media/image47.png)
+
+Also, the exact modulation amount is shown in the numeric display in the
+Preset area.
+
+### User assignable destinations
+
+**To assign a parameter to destinations 13 - 16:**
+
+![](images/media/image48.png)
+
+Hold \[**13, 14, 15, or 16**\] button while moving the desired knob or
+slider on the front panel. The parameter will appear in the LCD display
+as shown above.
+
+You can also assign a modulation amount in the matrix itself as a
+modulation destination by pressing and holding the \[**13, 14, 15, or
+16**\] button and pressing a button in the modulation grid.
+
+For instance:
+
+If you wanted to have the mod wheel adjust the amount of modulation
+between the LFO2 and the Metalizer of VCO1, you would first route the
+LFO2 to the Metalizer of VCO1 by pressing the F4 button. Then you would
+select F4 as a modulation destination by pressing the \[**13 for
+example**\] button and the F4 button. Now you would choose MOD Wheel to
+F4 by pressing the H13 button and using the encoder to turn up this
+value.
+
+**List of MOD sources:**
+
+
+|#|MOD source|Notes|
+|------|-----|-----|
+| A |  ENV 1  |       |    
+|  B |  ENV 2    |    |     
+|  C |  ENV 3    |        | 
+|  D |  ENV Follow    |   Generates a control voltage based on the level of the external input. |
+|  E |  LFO 1 |            |
+|  F |  LFO 2   |         |
+|  G | LFO 3   |         |
+|  H |  Mod Wheel   |      |
+|  I |  Kbd/ Seq      |   Note triggers from the keyboard or SEQuencer |
+|  J | Aftertouch   |    The keys are pressure-sensitive when you keep pushing after the note is triggered. |
+|  K |  Velocity      |   Electronic keyboards measure how fast a key travels to determine how loudly you intended to play. |
+|  L  | Seq Mod   |       Mod from the SEQuencer |
+| M  | M1       |        Macro knob M1 |
+|  N | M2      |         Macro knob M2 |
+| O |  Exp 1/M3    |     Expression control (usually a pedal) plugged into the rear panel, or Macro knob M3 |
+|  P  | Exp 2/M4  |       Expression control or Macro knob M4 |
+
+SEQUENCER Mode
+---------
+
+![](images/media/image49.png)
+
+MatrixBrute's 64-step sequencer has two modes: Sequencer and
+Arpeggiator.
+
+In Sequencer mode, you can record/program and play Patterns in real time
+or in "step" time, meaning one note at a time. Patterns can be Linked to
+a corresponding preset so that they are stored with Presets, or stored
+and recalled on their own. Play or step through patterns forward,
+backward, forward then backward, in random order, and at different note
+values (e.g. if each step is an 1/8th note, switch it to 1/4 notes to
+halve the playback speed, etc.).
+
+When the sequencer is being used as a modulation source and routed in
+the Matrix, each step can send (or not send) modulation. Dial in the
+tempo, tap it, or sync it to incoming MIDI clock. Slide one step into
+the next one. Steps respond to key velocity, and you can enter accents
+manually.
+
+In **Arpeggiator** mode the notes you hold down are stepped through in a
+variety of orders, and repeated in higher octaves.
+
+![](images/media/image50.png)
+
+Press **Sequencer**) to enter Sequencer mode.
+
+**Loading and saving sequencer Patterns:**
+
+- *Patterns* - You can load and play different sequences, or pattern, by
+holding the PATTERNS buttons and choosing from any of the 256
+sequences. The banks are rows A - P on the left, and presets within each
+bank are in columns 1-16. To load, say, Pattern B3, go two rows down and
+three columns across; the B3 red light shows you which sequence is
+loaded.
+
+- *Link* - you can link a sequence to your preset sound. When saving your
+preset, enable the LINK button to store them together.
+
+- *Save* - Just hold this button and select the bank/preset where you
+want to save the Pattern. *Turn on* **Link** *to save a Pattern with a
+Preset.* **\[See Matrix Preset mode p. xxx\]**
+
+- *SEQ Length* To set the sequence length, i.e. the number of steps up to
+64 maximum, hold SEQ Length and touch any of the four buttons in the
+last step to be played. They'll light up, and after that the sequence
+will cycle back to the beginning when it gets there (assuming you don't
+stop it first, and that it's playing forward rather than backward or
+random).
+
+![](images/media/image51.png)
+![](images/media/image52.png)
+
+#### Step parameters:
+
+The sequencer's 64 steps are in four 4-button rows of 16.
+
+- **Step** indicates a trigger on that step (when it's lit red). See the
+**Record** button below for instructions on how to program patterns, but
+you can push the button to turn a programmed/recorded note off. To tie several steps together, hold the first step button and press the last step one. All step buttons but the first are dimmed (darker).
+
+
+- **Accent** lights automatically when you enter or record a note at
+higher velocities, or you can turn it on to create an accent. This is
+used in conjunction with the VELOCITY sliders on the ENV 1 (VCF) and ENV
+2 (VCA).
+
+- **Slide** activate the GLIDE enable button and will allow you to slide
+from one note to another.
+
+- **MOD** toggles modulation on and off for the step. It has to be
+routed to a parameter in the modulation Matrix to have an effect, and it
+can do all kinds of interesting things.
+
+![](images/media/image50.png)
+
+#### Sequencer transport and Pattern recording/programming
+
+![](images/media/image53.png)
+
+- *&lt; and &gt;* locate the transport backward or forward one step (when
+it's stopped) and trigger the note on the step. (They have a different
+function in Arpeggiator mode. See below.)
+
+-  ![](images/media/image54.png) *Record* **-** (Lights up red.) This
+works independently of whether the transport is moving. When it's
+moving, your playing is recorded in real time. If it's pushed when the
+transport is stopped, press any of the 64 step buttons and whatever note
+you play will be recorded on that step (at the velocity you play). The
+button turns pink to indicate the current step.
+You can record over any note(s) in a sequence, and you can turn off
+individual notes simply by pushing their buttons.
+
+-  ![](images/media/image55.png)*Play from beginning* **-** (Lights up
+white.) This works under any condition - transport moving or stopped,
+Record active, etc.
+
+-  ![](images/media/image56.png)*Play/stop/continue* **-** (Lights up
+green.) This also works under any condition.
+
+![](images/media/image57.png)
+
+- **"Auto-play" feature:** When the Sequencer button is lit, the pattern
+will start to play, and continue as long you hold a note on the
+keyboard. **Play from beginning** lights up, and the pattern continues
+until you release the note. Play the note again, and the pattern starts
+over from the beginning.
+
+**NOTE:** *The pattern auto-plays its programmed pitches if you play
+middle C, but it transposes if you play another note (and if you play
+subsequent notes, it transposes again without stopping, provided you
+connect the notes closely enough). For that reason, it's a good idea to
+program/record patterns with C as the base note.*
+
+- **Tempo, rate, and playback controls**
+
+**NOTE:** *These apply to both Sequencer and Arpeggiator modes.*
+
+![](images/media/image50.png)
+
+**MIDI Sync** ignores the internal tempo and locks the Sequencer and
+Arpeggiator to incoming MIDI clock. Use this if you're using the
+MatrixBrute with a MIDI sequencer or other MIDI equipment. External Sync may come from three sources: MIDI In, MIDI over USB and Sync port. You can choose the source you wish to use with the MIDI Control Center.
+
+
+![](images/media/image58.png)
+
+- *Gate* sets the on/off length of each step, on a scale from 1 to 99. At
+99, each note trigger is held until the following step.
+
+- *Swing* delays every odd-numbered step to create a shuffle rather than a
+straight pattern. 50% is no swing, 75% is maximum swing. With 8th notes,
+for example, 50% swing gives you even 8th notes, and the more swing you
+add, the closer you get to a dotted 8th followed by a 16th note.
+
+- *Rate* dials in the sequencer tempo, from 30 to 259.9. The tempo is
+shown in the display. When sync’d to MIDI, the rate knob will increment
+in exact divisions of time based on the incoming clock.
+
+- *Tap* this button to tap in the tempo. The sequencer engine updates with
+every tap, so you can keep tapping if you need to follow a drifting
+tempo, and result is shown in the display. Taps are relative to the
+current note value (see the following topic), so if you're set to
+quarter notes, each tap is a quarter note. If you're set to 1/8th note
+triplets, each tap is one of those, and do on.
+
+**Note value buttons**
+
+![](images/media/image59.png)
+
+These playback settings determine what note value each step is, relative
+to the playback tempo. If you're using the MatrixBrute on its own, this
+will simply change the playback speed in a predictable way. But if
+you're locking the tempo to MIDI clock, it will change the musical value
+of each step in the sequencer or arpeggiator.
+
+From left to right, the three buttons with musical notes represent
+"straight" notes, triplets, and dotted notes. The "fraction" buttons
+below them determine what value the musical notes are.
+
+Examples:
+
+- 1/4 + ![](images/media/image60.png) means each step is a quarter note;
+
+- 1/8 + ![](images/media/image60.png)makes each step an eighth note;
+
+- 1/8 + ![](images/media/image61.png) will make each step an 1/8th note
+triplet;
+
+- 1/16 + ![](images/media/image62.png)...that's going to make each step a dotted
+1/16^th^.
+
+
+![](images/media/image63.png)
+
+### Arpeggiator mode
+
+**Arpeggiator** enters this mode, in which the notes you hold are
+automatically stepped through one at a time. You can hold down as many
+keys as your hands or even forearms will cover; each note you hold
+lights up a red step in the Matrix.
+
+![](images/media/image64.png)
+
+The yellow lettering underneath buttons applies to the arpeggiator.
+
+- **Up** steps through the notes from lowest to highest and repeats;
+
+- **Dwn** steps through them from highest to lowest and repeats;
+
+- **Up/Down** does just that: play from lowest to highest and back down;
+
+- **Rand** plays the held notes in random order.
+
+- **Octave &gt;** Each push of this button causes the arpeggiator to
+repeat the up/down or random sequence an additional octave higher, up to
+three octaves, and **&lt;** subtracts an octave with each push. The
+setting is shown in the display.
+
+### Matrix Arpeggiator Mode
+
+*Press both Sequencer and Arpeggiator.*
+
+This mode lets you hold up to four notes and play them in any order, in
+the octave you set for each note, up to 16 steps. You can also vary the
+rhythm of the arpeggio up to 16 steps.
+
+![](images/media/image65.jpg)
+
+You can hold down any four notes (or fewer), in the example above,
+Ab-C-E-G are being arpeggiated in the pattern shown, use the blue
+buttons to shift the specific note of your arpeggio up or down within
+the three octaves. The red line shows the steps, i.e. the rhythm
+pattern.
+
+In addition, you can use chromatic approach notes:
+ 
+- Lower approach note: If you hold the < transport control while pressing a button in the octave section, the note sent is one half step below, and the button turns red instead of blue
+
+- Upper approach note: If you hold the > transport control while pressing a button in the octave section, the note sent is one half step above, and the button turns purple instead of blue
+
+
+
+

@@ -1,0 +1,348 @@
+@page {
+    size: A5;
+    marks: crop cross;
+    prince-bleed: 3mm;
+    prince-trim: 3mm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+
+}
+
+@page manual {
+    border-bottom: thin solid black;
+    @bottom-left {
+        color: grey;
+        font-size: .6em;
+        font-family: sans-serif;
+        vertical-align: top;
+        margin-top: 2mm
+    }
+    @bottom-right {
+        color: grey;
+        font-size: .6em;
+        font-family: sans-serif;
+        vertical-align: top;
+        margin-top: 2mm
+    }
+}
+
+hr {
+    visibility: hidden;    
+    page-break-after: always;
+
+}
+@media print {
+    .container {
+        width: auto;
+    }
+}
+
+body {
+    font-family: 'Roboto ', sans-serif;
+    text-align: justify;
+    font-size: 8pt;
+}
+ul img{
+    margin: 0 ;
+    display:inline;
+}
+img {
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding-left: .5cm;
+    padding-right: .5cm;
+    vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #cbcbcb;
+}
+thead {
+        background-color: #e0e0e0;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+tr {
+        border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #cbcbcb;
+}
+tr:nth-child(even) {background-color: #f2f2f2}
+td, th {
+      padding: 0.5em 1em;
+    border-left: 1px solid #cbcbcb;
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible;
+}
+.img-box {
+    page-break-inside: avoid;
+}
+
+.img-box p {
+    text-align: center;
+    font-style: italic;
+}
+
+title {
+    string-set: book-title content()
+}
+
+.text-center {
+    text-align: center;
+}
+
+.notice {
+    page-break-after: always;
+    page-break-inside: avoid;
+    
+}
+.notice h1 {
+    text-align: center;
+        font-size: 1.6em;
+
+}
+.notice h2 {
+        font-size: 1.2em;
+
+}
+.thanks {
+    page-break-after: always;
+    page-break-inside: avoid;
+}
+
+.thanks h1 {
+    text-align: center;
+        font-size: 1.6em;
+
+}
+.thanks h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    border-bottom: thin solid black;
+    border-top: thin solid black;
+    text-transform: uppercase;
+    margin-bottom:0;
+}
+
+.thanks h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.thanks ul {
+    font-size: 1em;
+    -webkit-column-count: 4;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 4;
+    /* Firefox */
+    column-count: 4;
+    list-style-type: none;
+    /*padding: 0;*/
+    margin-left: 0;
+}
+
+.thanks p {
+    font-size: 1em;
+   
+}
+
+.contents {
+    display: block;
+    page: table-of-contents;
+    counter-reset: page 1;
+    
+}
+
+.contents li{
+    list-style-type: none;
+}
+.contents a {
+    color: black;
+}
+
+.contents h1 {
+    text-align: center;
+     font-size: 1.6em;
+}
+
+   
+
+
+
+.contents a::after {
+    content: leader('.') " " target-counter(attr(href), page)
+}
+
+.contents ul{
+    margin-left: 0.5cm;
+}
+.contents ul li{
+        font-size: 1em;
+        counter-increment: t1;  
+        counter-reset: t2 t3 t4;
+}
+.contents > ul > li::before {
+    content: counter(t1)".    "
+}
+
+.contents ul li ul li {
+        font-size: 0.9em;
+    
+    counter-increment: t2;
+        counter-reset: t3 t4;
+}
+.contents > ul > li > ul li::before {
+    
+    content: counter(t1)"." counter(t2)".    "
+}
+
+.contents ul li ul li ul li {
+        font-size: 0.8em;
+        counter-increment: t3;
+        counter-reset: t4;
+}
+.contents > ul > li > ul > li > ul li::before {
+    
+    content: counter(t1)"." counter(t2)"." counter(t3)".    "
+}
+
+
+#toc {
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 20px;
+   
+
+}
+
+
+#toc a,
+#toc span {
+    display: inline-block;
+    background: #fff;
+    position: relative;
+    bottom: -4px;
+}
+
+#toc a {
+    float: right;
+    padding: 0 0 3px 2px;
+}
+
+#toc span {
+    float: left;
+    padding: 0 2px 3px 0;
+}
+
+
+
+
+
+
+.manual {
+    display: block;
+    page: manual;
+    font-size: 1em;
+}
+
+h1 {
+    font-weight: inherit;
+}
+
+.manual h1 {
+    font-size: 1.2em;
+        font-weight: bold;
+
+    background-color: black;
+    padding: 1mm 3mm 1mm 3mm;
+    color: white;
+    text-transform: uppercase;
+    counter-increment: h1;
+    counter-reset: h2 h3 h4;
+    prince-bookmark-level: 1;
+    page-break-before:always;
+
+    string-set: chapter content()
+}
+
+.manual h1:first-child {
+    
+    page-break-before:auto;
+
+}
+
+.manual h1::before {
+    content: counter(h1)". "
+}
+
+.manual h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 0.5cm;
+    counter-increment: h2;
+    counter-reset: h3 h4;
+    prince-bookmark-level: 2;
+    string-set: section content()
+}
+
+.manual h2::before {
+    content: counter(h1)"."counter(h2)". "
+}
+
+.manual h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 1cm;
+    counter-increment: h3;
+    counter-reset: h4;
+    prince-bookmark-level: 3;
+    string-set: sub-section content()
+}
+
+.manual h3::before {
+    content: counter(h1)"."counter(h2)"."counter(h3)". "
+}
+
+.manual h4 {
+    font-size: 0.8em;
+    counter-increment: h4;
+    margin-left: 1.5cm;
+    string-set: sub-sub-section content()
+}
+
+.manual h4::before {
+    content: counter(h1)"."counter(h2)"."counter(h3)"."counter(h4)". "
+}
+
+@page manual:left {
+    @bottom-left {
+        content: counter(page)
+    }
+    @bottom-right {
+        content: "Arturia - "string(book-title)" - "string(chapter)
+    }
+}
+
+@page manual:right {
+    @bottom-right {
+        content: counter(page)
+    }
+    @bottom-left {
+        content: "Arturia - "string(book-title)" - "string(chapter)
+    }
+}
+
+@page table-of-contents {
+    @top {}
+}

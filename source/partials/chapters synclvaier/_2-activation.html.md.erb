@@ -1,0 +1,163 @@
+
+Activation And First Start Up
+=============================
+
+Register and Activate
+---------------------
+
+Synclavier V works on computers equipped with Windows 7 or 8 and Mac OS
+X 10.7 or later. You can use the stand-alone version or use Synclavier V
+as an Audio Units, AAX, VST2 or VST3 instrument.
+
+![](images/image20.png){width="6.0in"
+height="1.0444444444444445in"}
+
+Once Synclavier V has been installed, the next step is to register the
+software. The registration process will require you to enter the serial
+number and the unlock code you received with the product.
+
+In order to proceed, go to this web page and follow the instructions:
+
+<http://www.arturia.com/register>
+
+Note: If yo![](images/image21.png){width="6.607638888888889in"
+height="5.390623359580053in"}u don’t have an Arturia account yet, you
+will need to create one. The process is quick, but it does require that
+you can access your email address during the registration process.
+
+Once you have acquired an Arturia account you will be able to register
+the product.
+
+Initial setup
+-------------
+
+### Audio and MIDI Settings (Windows OS)
+
+At the top left of the Synclavier V application is a drop-down menu. It
+contains various setup options. Initially you will need to go to the
+menu and choose the **Audio Settings** option to get sound and MIDI
+flowing in and out.
+
+![](images/image22.jpeg){width="3.946527777777778in"
+height="4.634865485564305in"}
+
+When you choose the **Audio Settings** option, you will see the **Audio
+MIDI** **Settings** window.
+
+Starting from the top you have the following options:
+
+-   **Device** lets you select which audio driver you want use to route
+    sound out of the instrument. This might be your computer’s own
+    driver like Windows Audio, or an ASIO driver. The name of your
+    hardware interface may appear in this field.
+
+-   **Output Channels** lets you select which of the available outputs
+    will be used to route audio out. If you only have two outputs, only
+    two will appear as options. If you have more than two you can select
+    a specific pair of outputs.
+
+-   **Buffer Size** lets you select the size of the audio buffer your
+    computer uses to calculate sound. A smaller buffer means lower
+    **latency** (delay) between pressing a key and hearing the note. A
+    larger buffer means a lower CPU load as the computer has more time
+    to think, but can result in a small **latency**. Find the optimum
+    buffer size for your system. A fast, modern computer should easily
+    be able to operate at 256 or 128 sample buffer size without creating
+    pops or clicks in the sound. If you are getting clicks, try raising
+    the buffer a little. The **latency** is displayed in milliseconds on
+    the right hand side of this menu.
+
+-   **Sample Rate** allows you set the sample rate at which audio is
+    sent out of the instrument. The options here will depend on the
+    capability of your audio interface hardware, though most computers’
+    own hardware can operate at up to 48kHz which is perfectly adequate.
+    Higher sample rates use more CPU power so unless you have a good
+    reason to go up to 96kHz, then 44.1kHz or 48kHz are fine. The **Show
+    Control Panel** button here will jump to the system control panel
+    for whatever audio device is selected.
+
+-   **Play Test Tone** helps you troubleshoot audio issues by checking
+    that sound can be heard through the correct device.
+
+-   Your connected MIDI devices will appear in the MIDI Devices area.
+    Click the check box to accept MIDI from the device you want to use
+    to trigger the instrument. In stand-alone mode, Synclavier V listens
+    for all MIDI channels so there’s no need to specify a channel. You
+    can specify more than one MIDI device at once.
+
+### Audio and MIDI Settings (Mac OS X)
+
+At the top left of the Synclavier V application is a drop-down menu. It
+contains various setup options. Initially you will need to go to the
+menu and choose the **Audio Settings** option to get sound and MIDI
+flowing in and out.
+
+When you choose the **Audio Settings** option, you will see the **Audio
+MIDI** **Settings** window.
+
+![](images/image23.png){width="3.411111111111111in"
+height="3.7356321084864392in"}
+
+Starting from the top you have the following options:
+
+-   **Device** lets you choose the audio driver you want to route sound
+    out of the instrument. This will be either your Mac’s own driver,
+    **CoreAudio**, or another driver. If you are using another hardware
+    interface it will appear in this field.
+
+-   **Output** **Channels** lets you select which of the available
+    outputs will be used to route audio out. If you only have two
+    outputs, only two will appear as options. If you have more than two
+    you can select a specific pair of outputs.
+
+-   **Buffer Size** lets you select the size of the audio buffer your
+    computer uses to calculate sound. A smaller buffer means lower
+    **latency** (delay) between pressing a key and hearing the note. A
+    larger buffer means a lower CPU load as the computer has more time
+    to think, but can result in a small **latency**. Find the optimum
+    buffer size for your system. A fast, modern computer should easily
+    be able to operate at 256 or 128 sample buffer size without creating
+    pops or clicks in the sound. If you are getting clicks, try raising
+    the buffer a little. The **latency** is displayed in milliseconds on
+    the right hand side of this menu.
+
+-   **Sample Rate** allows you set the sample rate at which audio is
+    sent out of the instrument. The options here will depend on the
+    capability of your audio interface hardware, though most computers’
+    own hardware can operate at up to 48kHz which is perfectly adequate.
+    Higher sample rates use more CPU power so unless you have a good
+    reason to go up to 96kHz, then 44.1kHz or 48kHz are fine. The **Show
+    Control Panel** button here will jump to the system control panel
+    for whatever audio device is selected.
+
+-   Play Test Tone helps you to troubleshoot audio issues by checking
+    that sound can be heard through the correct device.
+
+Your connected MIDI devices will appear in the MIDI Devices area. Click
+the check box to accept MIDI from the device you want to use to trigger
+the instrument. In stand-alone mode, Synclavier V listens for all MIDI
+channels so there’s no need to specify a channel. You can specify more
+than one MIDI device at once.
+
+### Using Synclavier V in Plug-in Mode
+
+Synclavier V comes in VST, AU and AAX plug-in formats for use in all
+major DAW software like Cubase, Logic, Pro Tools and so on. You load it
+as a plug-in instrument. Its interface and settings work in the same way
+as in stand-alone mode, with a couple of differences.
+
+-   The instrument will now synchronize to your DAW’s host tempo/bpm
+    rate, when tempo is a factor. When you activate the Sync buttons on
+    the front panel, VIBRATO rate, STEREO pan rate, and REPEAT/ARPEGGIO
+    controls will synchronize to the DAW tempo/bpm.
+
+-   You can automate numerous parameters using your DAW’s
+    automation system.
+
+-   You can use more than one instance of Synclavier V in a DAW project.
+    In stand-alone mode you can only use one at a time.
+
+-   You can route Synclavier V’s audio outputs more creatively inside
+    your DAW using the DAW’s own audio routing system.
+
+    

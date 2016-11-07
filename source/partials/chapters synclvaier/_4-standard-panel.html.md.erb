@@ -1,0 +1,424 @@
+Standard Panel Mode Controls
+============================
+
+Timbre Settings
+---------------
+
+All of the TIMBRE SETTINGS controls are **global** and affect all of the
+Partials, but relative to the Partials’ individual settings. For
+example, if a the PAN in PARTIAL SETTINGS is panned far right for one
+Partial, it will only have a range of far right to center when setting
+the PAN in the TIMBRE SETTINGS section full left.
+
+![](images/image56.png){width="2.7666666666666666in"
+height="2.3645833333333335in"}
+
+Timbre Settings
+
+### Volume 
+
+The **Volume** knob is the overall loudness of the Timbre/Sound
+affecting all Partials. Its range is from 0.0db at full gain up to -50db
+(OFF) in increments of .1dB.
+
+### Pan
+
+The **Pan** knob globally moves the Partials stereo positioning
+left/right. Setting the knob straight up is **center**. The range is
+from -63 (hard left) to +63 (hard right). After turning the knob left or
+right you can return to **center** position by double-clicking on the
+knob.
+
+### Transpose
+
+The **Transpose** knob sets the pitch of your overall Timbre/Sound up or
+down in **semitone** increments. At the knob’s center position there is
+**No Transposition**. You can view the semitone value in the **Lower
+Toolbar** at the lower left side while you are turning the knob or
+placing your cursor over the knob. Double clicking the knob returns the
+knob to center or **No Transposition**. The range is from -24 to +24
+semitones.
+
+### Tuning
+
+The **Tuning** knob fine tunes the pitch of your overall Timbre/Sound up
+or down in individual **Cents** (100ths of a semitone). At the knob’s
+center position there is no pitch change. The parameter value is
+displayed in **Cents** in the **Lower Toolbar** at the lower left. The
+range is from -125 to +125 Cents below and above the setting of the
+**Transpose** knob.
+
+### Voice Chorus
+
+The **Voice Chorus** creates a duplicate voice of all of the Partials
+with a different pitch of your overall Timbre/Sound. At the knob’s
+center position there is no added voice, a value of 1.000. You can view
+the Chorus value in the **Lower Toolbar** at the lower left side while
+you are turning the knob or by placing your cursor over the knob. The
+range is from 0.000 to 16.000 in steps of .100. Double clicking on the
+knob returns the value to 1.000 or NO **Voice Chorus**.
+
+**Chorus:** Relationship of added voice
+
+**Setting:** to fundamental frequency
+
+**0.500:** One octave below
+
+**1.000:** Unison (no added Voice Chorus)
+
+**1.500:** Perfect fifth above
+
+**2.000:** Second harmonic (one octave above)
+
+**3.000:** Third harmonic (one octave plus a perfect fifth above)
+
+**4.000:** Fourth harmonic (two octaves above)
+
+**5.000:** Fifth harmonic (two octaves plus a major third above)
+
+**6.000:** Sixth harmonic (two octaves plus a perfect fifth above)
+
+**7.000:** Seventh harmonic (two octaves plus a minor seventh above)
+
+**8.000:** Eighth harmonic (three octaves above)
+
+**9.000:** Ninth harmonic (three octaves plus a major second above)
+
+**10.000:** Tenth harmonic (three octaves plus a major third above)
+
+**11.000:** Eleventh harmonic (three octaves plus an augmented fourth
+above)
+
+**12.000:** Twelfth harmonic (three octaves plus a perfect fifth above)
+
+**13.000:** Thirteenth harmonic (three octaves plus a perfect sixth
+above)
+
+**14.000:** Fourteenth harmonic (three octaves plus a minor seventh
+above)
+
+**15.000:** Fifteenth harmonic (three octaves plus a major seventh
+above)
+
+**16.000:** Sixteenth harmonic (four octaves above)
+
+### Chorus Fine
+
+The **Chorus Fine** knob is a much smaller tuning adjustment of the
+**Voice Chorus**. Range is from -.100 to +.100 and are between the
+**Voice Chorus** steps of .100. These values read out in the **Lower
+Toolbar** left side as well.
+
+Double clicking on the knob returns it to its center position 0.000.
+
+### F.M. Modulation
+
+The **F.M. Modulation** knob controls the overall amount of F.M.
+modulation for all the Partials in the current Timbre. The parameter
+range is from 0.000 to 1.000.
+
+**Important:** For this control to have ANY effect on the Timbre:
+
+-   There must be a **CARRIER** wave AND a **MODULATOR** wave assigned
+    to one or more Partials under the **TIME SLICES** Tab (**Graphic
+    Screen Mode**).
+
+-   The **F.M. Amount** control in **Partial Settings** (**Extended
+    Panel Mode**) must be greater than
+
+-   0.000
+
+-   The Modulation value in SLICE SETTINGS for one or more Partials
+    under the **TIME SLICES** Tab (**Graphic Screen Mode**) must be
+    greater than 0.00
+
+### Bit Depth
+
+**Bit Depth** controls the digital resolution of the current timbre. The
+original Synclavier voices were 8-bit but Synclavier V has added a range
+from 4-bit all the way up to 24-bit resolution in increments of 2. On
+the lower end, you will hear a digital noise or aliasing causing a
+grittiness to the sound. As you increase the **Bit** **Depth** knob, the
+sound will sound “smoother” with no noise.
+
+Amp Env Offset
+--------------
+
+All of the **AMP ENV OFFSET** controls are **global** and affect all of
+the Partials in the current Timbre, but relative to the Partials’
+individual settings. For example, if one Partial \#1 has a slow attack
+and Partial \#2 has a fast attack, decreasing the value will only affect
+the attack of Partial \#1.
+
+![](images/image58.png){width="3.388888888888889in"
+height="2.240972222222222in"}
+
+### Attack
+
+The **Attack** knob increases or decreases volume envelope ramp up time
+of all Partials in the current Timbre. The volume envelope, or how fast
+the sound ramps up in volume from the note-on, is affected. The default
+is a value of 0.00 and the range is -1.00 to +1.00.
+
+(See also section **6.3.2** **Attack** of an individual Partial)
+
+### Decay
+
+The **Decay** knob increases or decreases values of all Partials’ Decay
+in the current Timbre.
+
+-   When the Peak level is greater than 0.00, **Decay** controls how
+    fast the sound ramps down from the **Peak** volume to the
+    Sustain volume.
+
+-   When the Peak level is 0.00, **Decay** controls how fast the sound
+    ramps up to the Sustain volume.
+
+-   The default is a value of 0.00 and the range is -1.00 to +1.00.
+
+(See also section **6.3.4** **Decay** of an individual Partial)
+
+### Release
+
+The **Release** knob increases or decreases values of all Partials’
+Release in the current Timbre. Release is the time for the sound to
+decay to zero after the key on the keyboard is let go.
+
+(See also section **6.3.6 Release** of an individual Partial)
+
+Harm Env Offset
+---------------
+
+All of the **HARM ENV OFFSET** controls are **global** and affect all of
+the Partials in the current Timbre, but relative to the Partials’
+individual settings. For example, if one Partial \#1 has a slow harmonic
+(F.M.) attack and Partial \#2 has a fast harmonic (F.M.) attack,
+decreasing the value will only affect the attack of Partial \#1.
+
+### Attack
+
+The **Attack** knob increases or decreases values of all the Partials’
+harmonic (F.M.) envelope in the current Timbre. The harmonic (F.M.)
+envelope, or how fast the F.M. amount ramps up in volume from the
+beginning, is affected. The default is a value of 0.00 and the range is
+-1.00 to +1.00.
+
+(See also section **6.3.2** harmonic **Attack** of an individual
+Partial).
+
+### Decay
+
+The **Decay** knob increases or decreases values of all the Partials’
+harmonic Decay of the current Timbre.
+
+-   When the Peak level is greater than 0.00, **Decay** controls how
+    fast the harmonic envelope ramps down from the **Peak** volume to
+    the harmonic Sustain level.
+
+-   When the Peak level is 0.00, **Decay** controls how fast the
+    harmonic envelope ramps up to the harmonic Sustain level.
+
+-   The default is a value of 0.00 and the range is -1.00 to +1.00.
+
+(See also section **6.4.4** harmonic **Decay** of an individual Partial)
+
+### Release
+
+The **Release** knob increases or decreases values of all the Partials’
+harmonic (F.M.) Release in the current Timbre. Release is the time for
+the sound to decay to zero after the key on the keyboard is let go.
+
+(See also section **6.4.6** harmonic **Release** of an individual
+Partial)
+
+Repeat/Arpeggio
+--------------------
+
+The **REPEAT/ARPEGGIO** section of Synclavier V is a **global** control
+affecting all of the Partials in your current Timbre.
+
+###  5.4.1 Repeat
+
+When the **Repeat** button is turned on, all of the notes being played
+on your keyboard will repeat while a key is being depressed. When
+multiple keys are depressed, any delay between notes will remain. The
+repeat rate will be determined by the **Rate** knob.
+
+###  5.4.2 Arpeggio
+
+When the **Arpeggio** button is turned on, any notes simultaneously
+performed on your keyboard will sound independently in an arpeggio
+pattern. If the **Repeat** button is also turned on, the selected notes
+held down will continue to arpeggiate at the tempo set by the **Rate**
+knob.
+
+### Sync
+
+When using Synclavier V as an instrument plug-in in your DAW project,
+the **Sync** button allows both the **Repeat** and **Arpeggio**
+functions to synchronize with the tempo of your DAW project. The tempo
+is set by the **Rate** knob.
+
+### Rate
+
+The **Rate** knob determines the speed of your repeating notes or
+arpeggios. When the **Sync** button is OFF the **Rate** value reads in
+Hz (Hertz or cycles per second) in the **Lower Toolbar**. The range is
+0.00 to 50.0Hz.
+
+When the **Sync** button is ON the **Rate** value reads as Timbre BPM
+Multiplier in the **Lower Toolbar.**
+
+When Synclavier V is used as an instrument plug-in in your DAW project
+and the **Sync** button is turned ON, the speed will synchronize to the
+tempo of your DAW project. The **Rate** adjustment is a BPM Multiplier
+(Beats Per Minute). Values are:
+
+**BPM/8:** 1/8 speed of your tempo
+
+**BPM/6:** 1/6 speed of your tempo
+
+**BPM/5:** 1/8 speed of your tempo
+
+**BPM/4:** 1/4 speed of your tempo
+
+**BPM/3:** 1/3 speed of your tempo
+
+**BPM/2:** 1/2 speed of your tempo
+
+**BPMx1:** Exact speed of your tempo
+
+**BPMx2:** 2x speed of your tempo
+
+**BPMx3:** 3x speed of your tempo
+
+**BPMx4:** 4x speed of your tempo
+
+**BPMx5:** 5x speed of your tempo
+
+**BPMx6:** 6x speed of your tempo
+
+**BPMx8:** 8x speed of your tempo
+
+### Pattern
+
+**Pattern** is a drop-down menu with 6 different arpeggio styles
+
+(top to bottom order):
+
+-   Performance order: the notes will play in the order in which you
+    perform them on the keyboard **RATE** Sets the speed of the sweep
+
+-   Keyboard Up: Notes play from the lowest to the highest continuously
+
+-   Keyboard Down: Notes play from the highest to the lowest
+    continuously
+
+-   Keyboard Up/Down (Repeat): Notes play up, down and repeat the top
+    and bottom notes
+
+-   Keyboard Up/Down (No Repeat): Notes play up, down without repeating
+    the top and bottom notes
+
+-   Random: Notes play in a continuously random pattern
+
+![](images/image60.png){width="4.63125in" height="3.7125in"}
+
+Polyphonic Mode
+---------------
+
+The **POLYPHONIC MODE** section contains **global** functions that
+affect all Partials in the current Timbre.
+
+![](images/image62.png){width="3.0625in" height="2.83125in"}
+
+### Poly Normal
+
+The **Poly Normal** mode provides for full polyphony. When a Note On
+event is received (either keyboard or sequencer) a new voice is
+activated for the desired sound in all cases. Earlier notes of the same
+pitch that are in the Final **Decay** state are not affected; their
+decay continues without interruption. With very long final decay
+settings this can lead to undesirable phase cancellations or overloading
+the audio output.
+
+### Poly Retrig.
+
+**Poly Retrig.** mode allows for full polyphony, however if a Note On
+event is received that matches a note that is currently in the Final
+**Decay** state, the envelope generators for the matching note are
+retriggered. The **Poly Retrig.** mode is very natural for sounds with a
+long final decay such as bells or gongs. **Polyphonic Retrig.** is the
+default polyphony mode.
+
+### Mono Porta
+
+**Mono Porta** mode restricts the audio output to one note of the
+current Timbre at a time. The effect is a legato phrase similar to the
+tonguing and slurring technique of a wind or brass instrument. The
+monophonic settings are also useful for recreating the sounds of early
+analog and digital synthesizers that were monophonic by design.
+
+In this mode, when a new note is played while an earlier note is being
+held, the previous note ends and the result is a “slur” to the new note.
+The envelope generators are NOT retriggered. Synthesists refer to this
+as “Single Triggering”.
+
+### Mono Retrig.
+
+**Mono Retrig.** mode also restricts the audio output to one note of the
+current Timbre at a time. When a new note is received while an earlier
+note is being held, the pitch of the earlier note is adjusted to match
+the new note and the envelope generators ARE retriggered. The effect is
+a more percussive sound from every note. Synthesists refer to this as
+“Multi-Triggering”.
+
+Portamento
+----------
+
+**PORTAMENTO** is a global parameter affecting all Partials in the
+current Timbre. It makes the pitch “glide” between the notes you play,
+rather than changing the pitch instantly as soon as you hit another key
+or keys on your keyboard. The effect works on Polyphonic or Monophonic
+Timbres.
+
+### On
+
+The **On** button turns the **PORTAMENTO** function ON or OFF.
+
+### Log/Lin
+
+**Log/Line** button switches between a Linear or a Logarithmic curve for
+the **PORTAMENTO** “glide” effect. OFF is Linear and ON is Logarithmic.
+
+### Rate
+
+**Rate** knob controls the speed at which the sound glides from one
+pitch to the next. The range is from 0.0 milliseconds to 30 seconds.
+
+Bend Wheel & Mod Wheel
+----------------------
+
+The **BEND** **WHEEL** & **MOD** **WHEEL** are located on the left hand
+side of the Virtual Keyboard and can also be controlled from a MIDI
+keyboard or other MIDI controller.
+
+The **BEND** **WHEEL** raises or lowers the pitch of your current Timbre
+up or down gradually. The default **Pitch bend Depth** is 2 (two)
+semitones but can be increased or decreased, from 0 (zero) semitones to
+25 (twenty five) semitones, under the **SETTINGS** tab of the **Graphic
+Screen Mode. **
+
+The **BEND WHEEL** is “spring loaded” and comes to rest in the center
+position. It can also be routed to control other Partial parameters in
+the **MODS** section of the **Graphic Screen Mode**. See section
+**7.5.1** for further details on routing.
+
+The **MOD WHEEL** can also be routed to many Partial parameters. Not
+“spring loaded” like the **BEND** **WHEEL,** it operates like a slider
+down and up. Its range is from 0.000 to 1.000. A common routing is to
+control vibrato depth.
+
+![](images/image63.png){width="2.859722222222222in"
+height="3.2159722222222222in"}
+
