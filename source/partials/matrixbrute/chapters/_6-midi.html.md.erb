@@ -10,7 +10,7 @@ master keyboard.
 
 MIDI can go in and out the USB port, the 5-pin DIN ports, both, or
 neither. All the MIDI settings are in Arturia's MIDI Control Center
-Mac/PC program, which you download from www.Arturia.com. (See below.)
+Mac/PC program, which you download from www.arturia.com. (See below.)
 
 The sequencer and arpeggiator can lock to MIDI clock. They send MIDI
 notes, so you can record and edit the notes they send in a DAW. Since
@@ -19,7 +19,12 @@ everything on the instrument can be in tempo.
 
 ## MIDI Continuous Controller Assignments
 
-![](images/media/image66.png)
+![Play]({
+    "img":{
+        "link":"/images/media/image66.png",
+        "class":"col-xs-12"
+        }
+})
 
 In the graphic above, the numbers superimposed over knobs are all MIDI
 Continuous Controllers (CC), so for example the Modulation wheel
@@ -35,9 +40,9 @@ The Sustain pedal input in the rear is CC\#64, which is standard.
 ##  MIDI Control Center settings
 
 The MIDI settings are all using the MIDI Control Center's **Device**
-tab. Again, download the software from www.Arturia.com.
+tab. Again, download the software from www.arturia.com.
 
-![](images/media/image67.png)
+![](/images/media/image67.png)
 
 - *Input MIDI Channels* - All, 1-16, none. MaxiBrute sends and receives on one 16-channel MIDI port.
 
@@ -46,12 +51,8 @@ tab. Again, download the software from www.Arturia.com.
 - *MIDI clock source* - USB, MIDI, Sync. The USB port is the MaxiBrute's
  built-in MIDI interface, which you connect to a Mac or PC; MIDI is the
  5-pin DIN MIDI in.
- 
-- Use the Sync port to interface with pre-MIDI devices, such as old Korg
- and Roland drum machines. The following types are supported: the
- default is 1 pulse per step, 2 pulse per quarter note (Korg Volca), 24
- pulses per quarter note (Roland DIN), and 48 pulses per quarter note
- DIN.
+ Use the Sync port to interface with pre-MIDI devices, such as old Korg and Roland drum machines. The following types are supported: the default is 1 pulse per step, 2  pulse per quarter note (Korg Volca), 24 pulses per quarter note (Roland DIN), and 48 pulses per quarter note DIN.
+
 - *MIDI param send and receive* - Turns MIDI from the panel on and off.
  The keyboard still sends notes when it's off. You might not want the
  knobs and sliders to trigger or respond to MIDI from another
@@ -110,7 +111,12 @@ tab. Again, download the software from www.Arturia.com.
 - *Velocity curve* - This lets you adjust the keyboard response to your
  playing style and preference.
 
- ![](images/media/image68.png)
+ ![Play]({
+    "img":{
+        "link":"/images/media/image68.png",
+        "class":"col-xs-12"
+        }
+})
 
 - *Linear* (the default) has an even response across the dynamic
  range;
@@ -124,4 +130,62 @@ tab. Again, download the software from www.Arturia.com.
 - *Sequencer/Arp Sends Notes* - (On/Off) The sequencer/arpeggiator can
  send MIDI notes to trigger other instruments or to be recorded in a
  DAW.
- 
+
+**AC Input Specifications**
+
+| | |
+| --- | --- |
+| Voltage |  100V - 240V AC  |  
+|  Watts |  45W    |   
+|  Hertz |  50-60 Hz   |     
+
+**Pedal Connections**
+
+| | |
+| --- | --- |
+| Expression |  Tip = Pot center tap ; Ring =  3.3V ; Sleeve = Gnd  |  
+|  Sustain |  Normal open    |   
+
+**Pedal Connections**
+
+| | |
+| --- | --- |
+| Expression |  Tip = Pot center tap ; Ring =  3.3V ; Sleeve = Gnd  |  
+|  Sustain |  Normal open    |   
+
+**Control Voltages I/O**
+
+| | |
+| --- | --- |
+| VCO1 Pitch | 0 - 10V |
+| VCO1 Ultra Saw | +/- 5V |
+| VCO1 Pulse Width | +/- 5V |
+| VCO1 Metalizer | +/- 5V |
+| VCO2 Pitch | 0 - 10V |
+| VCO2 Ultra Saw | +/- 5V |
+| VCO2 Pulse Width | +/- 5V |
+| VCO2 Metalizer | +/- 5V |
+| Steiner Cutoff | 0 - 10V |
+| Ladder Cutoff | 0 - 10V |
+| LFO 1 amount | 0 - 10V |
+| VCA | 0 - 10V |
+   
+**Gate I/O (TS)**
+
+| | |
+| --- | --- |
+| Gate (TS) |  0 – 5V  |  
+
+**Sync (TRS)**
+
+| | |
+| --- | --- |
+| Gate |  0 – 5V  |  
+
+**Audio I/O**
+
+| Label | Jack | Level | Note |
+| --- | --- | --- | --- |
+| Master Out L/R | Mono TS | +4dBu|  |
+| Audio In | Mono TS | Line = 0-20dB  Inst = 0-40dB | 68kΩ 1.1MΩ |
+| Insert | TRS = Tip=Send; Ring = Return; Sleeve = Gnd | +4dBu | |

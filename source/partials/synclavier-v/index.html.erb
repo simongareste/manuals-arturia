@@ -1,0 +1,15 @@
+<div class="container title">
+    <%= partial "title" %>
+</div>
+<div class="container thanks">
+    <%= partial "thanks-content" %>
+</div>
+<div class="container notice">
+    <%= partial "notice" %>
+</div>
+<div class="container contents">
+    <%= partial "toc" %>
+</div>
+<div class="container manual">
+    <%= all_chapters(current_page.path) %>
+</div>

@@ -1,36 +1,31 @@
+
 # Connections
 
-![](images/media/image3.png)
+![Back View]({
+    "img":{
+        "link":"/images/media/image3.png",
+        "class":"col-xs-12",
+        "title":"Back View"
+        }
+})
 
 Panel Release latch - Push, then use the hinged prop inside the case to
 set the control panel at the most convenient angle. You can also leave
 the panel flat.
 
-**1. Master Out** - 1/4" TS +10dBV stereo line-level outputs,
-intended to go to an amp and speakers, or to an audio interface or
-mixer. For mono use the left channel only.
+**1. Master Out** - 1/4" unbalanced +4dBu stereo line-level outputs, intended to go to an amp and speakers, or to an audio interface or mixer. For mono use the left channel only.
 
-**2. Insert Send/Return** - 1/4" TRS jack for sending the output of the
-synth (mono) to an external processor and back in. This goes before the
-Master Out in the signal path. It requires an insert cable, wired: Tip =
-Send, Ring = Return, Sleeve = Ground.
+**2. Insert Send/Return** - +4dBu 1/4" TRS jack for sending the output of the synth (mono) to an external processor and back in. This goes before the Master Out in the signal path. It requires an insert cable, wired: Tip = Send, Ring = Return, Sleeve = Ground.
 
-**3. CV Ins/Outs** - 3.5mm control voltage outputs and inputs for being
-controlled/controlling by modular synthesizers. 12 parameters are
-available (VCA, LFO 1 Amount, Ladder Filter Cutoff, Steiner Filter
-Cutoff, VCO 2 Metal, Pulse Width, Ultra, Pitch; VCO 1 Metal, Pulse
-Width, Ultra, Pitch).
+**3. CV Ins/Outs** - 3.5mm control voltage outputs and inputs for being controlled/controlling by modular synthesizers. 12 parameters are available (VCA, LFO 1 Amount, Ladder Filter Cutoff, Steiner Filter Cutoff, VCO 2 Metal, Pulse Width, Ultra, Pitch; VCO 1 Metal, Pulse Width, Ultra, Pitch). The CV inputs are tolerant to +/-15V
 
 **4. Input** - External input. Run external instruments through the
 MatrixBrute's synthesis engine.
 
-**5. Input Type (Inst/Line)** - For external instrument, use Instrument
-level for Hi-Z sources like an electric guitar or bass; use Line level
-for -10dBV sources such as another electronic instrument, mixer output,
-or turntable preamp output.
+**5. Input Type (Inst/Line)** - For external instrument, use Instrument level for Hi-Z sources like an electric guitar or bass; use Line level for sources such as another electronic instrument, mixer output. This is an unbalanced input. Line = 68kΩ. Instrument = 1.1MegΩ
 
 **6. Gain** - Level control for external instrument input, used in
-conjunction with the Gate (\#7).
+conjunction with the Gate (\#7). Line Gain = 0 -> 20dB. Instrument Gain = 0 -> 40dB
 
 **7. Audio Gate (Off/On)** - A gate extractor that allows you to use
 external audio signals, like a guitar, to trigger the envelope
@@ -43,9 +38,7 @@ another source, such as an analog drum machine.
 
 **9. Sync In/Out** - Interfaces MatrixBrute with pre-MIDI instruments
 that were capable of synchronization, such as early Korg and Roland drum
-machines.
-
-The following types of clock signals work: 1 step (Clock - this is the
+machines. The following types of clock signals work: 1 step (Clock - this is the
 default); 1 step (Gate); 24 pulses per quarter note; 48 pulses per
 quarter note.
 
@@ -53,9 +46,9 @@ quarter note.
 for continuously variable expression pedals (sometimes called volume
 pedals), Sustain is for a momentary on/off pedal (i.e. a sustain pedal).
 Some manufacturers reverse the polarity of their pedals; download the
-MIDI Control Center software from www.Arturia.com to correct the
+MIDI Control Center software from www.arturia.com to correct the
 polarity of any of them. These pedals are converted to MIDI, so they
-appear in the MIDI Out datastream.
+appear in the MIDI Out datastream. Expression pedal wiring is Tip = pot center tap; Ring = 3.3V; Sleeve = Gnd
 
 **11. Memory Protection On/Off** - When off, prevents the MatrixBrute's
 patch Preset and sequencer Pattern memories from being overwritten.
@@ -66,9 +59,10 @@ interfaces and other equipment.
 **13. USB** - USB B jack for connecting MatrixBrute to a Mac or PC
 (which normally have USB A connections; the cable is often called a
 "printer cable.") This lets you use Arturia's MIDI Control Center
-software (available from www.Arturia.com), and it also sends/receives
+software (available from www.arturia.com), and it also sends/receives
 MIDI - no additional MIDI interface is required.
 
 **14. Power switch** - Turn the instrument on and off.
 
-**15. AC jack**
+**15. AC jack** 100-240Vac, 50-60Hz, 45W
+

@@ -4,7 +4,7 @@ Operation
 Master Controls
 ---------------
 
-![](images/media/image23.png)
+![](/images/media/image23.png)
 
 These controls are always active, and they're not sent out or received
 over MIDI.
@@ -24,7 +24,12 @@ Utility Commands
 Pressing **Panel** plus another button invokes the following "hidden"
 commands.
 
-![](images/media/image24.png)
+![]({
+    "img":{
+        "link":"/images/media/image24.png",
+        "class":"col-xs-10 col-xs-offset-1"
+        }
+})
 
 - **Panel + Kbd Track** - Auto-tunes the instrument. Because voltages
 drift over time - which is part of the character of analog synths - it's
@@ -32,7 +37,7 @@ necessary to tune the instrument occasionally, more frequently while
 it's first warming up.
 
 
-![](images/media/image25.png)
+![](/images/media/image25.png)
 
 - **Panel + PRESET** - Resets the current preset to an initialized voice
 (without saving it and overwriting the preset). This is a good starting
@@ -43,7 +48,7 @@ of all modulation routings.
 
 - **Panel + SEQ** - Resets the current pattern.
 
-![](images/media/image26.png)
+![](/images/media/image26.png)
 
 - **Panel + \[Macro knobs, Master Cutoff, MOD Amount\]** - Resets the 360˚
 knob's value to 0.
@@ -68,7 +73,7 @@ linear.
 
 ### VCOs 1 and 2
 
-![](images/media/image13.png)
+![](/images/media/image13.png)
 
 The only difference between these two VCOs is that VCO 1 can be routed
 into VCO 2 to modulate it (this is called *frequency modulation*, or
@@ -90,13 +95,13 @@ next), an octave below them.
 
 *Sub* adjusts the level.
 
-![](images/media/image27.png)
+![](/images/media/image27.png)
 
 The *waveform selection* knob above it sweeps the sub wavefom between a pure sinewave to the left and a clipped one, which sounds buzzier, to the right.
 
 ### Mixable waveforms
 
-![](images/media/image28.png)
+![](/images/media/image28.png)
 
 There are three primary waveforms in VCOs 1 and 2 - sawtooth, square,
 and triangle. Subjectively, sawtooth sounds the richest, square sounds
@@ -113,12 +118,11 @@ time-shifted copies of it, resulting in a brighter, edgier sound.
 square pulses - the width - so it's sometimes a rectangle rather than a
 square, making the sound more complex.
 
-- *Metalizer* adds a hard edge to the triangle wave. The Metalizer is a
-type of wave folder that adds harmonics to the original trianalge wave.
+- *Metalizer* adds a hard edge to the triangle wave. The Metalizer is a type of wave folder that adds harmonics to the original trianalge wave. 
 
 ### VCO 3 - LFO 3
 
-![](images/media/image29.png)
+![](/images/media/image29.png)
 
 VCO 3 is a multifunction oscillator, designed to be used as a sound
 source or as a modulation source. The Noise oscillator is next to it,
@@ -141,29 +145,21 @@ example, woodwind and brass instruments.
 
 ###  Noise Generator
 
-![](images/media/image29.png)
+![](/images/media/image29.png)
 
-The definition of noise is a random waveform, so it's unpitched. The
-MatrixBrute offers four noise types, and the difference is in their
-frequency spectrum
+The definition of noise is a random waveform, so it's unpitched. The MatrixBrute offers four noise types, and the difference is in their frequency spectrum.
 
-As a practical description, blue noise has the most energy in the high
-frequencies and least in the low ones, then white sounds a little lower,
-followed by pink, and finally red sounds the lowest. Noise can be an
-important component of a sound, adding some grit, or it can be used to
-modulate another wave.
+As a practical description, blue noise has the most energy in the high frequencies and least in the low ones, then white sounds a little lower, followed by pink, and finally red sounds the lowest. Noise can be an important component of a sound, adding some grit, or it can be used to modulate another wave.
 
-Noise *Type* selects the four types successively, and each one has an
-appropriately colored light.
+Noise Type selects the four types successively, and each one has an appropriately colored light.
+
 
 Audio Mod
 ---------
 
-![](images/media/image30.png)
+![](/images/media/image30.png)
 
-In addition to making sounds, the VCOs can modulate other VCOs and the
-two VCFs (Voltage-Controlled Filters). These will create more character
-and add harmonics to the sound of the modulation destination.
+In addition to making sounds, the VCOs can modulate other VCOs and the two VCFs (Voltage-Controlled Filters). These will create more character and add harmonics to the sound of the modulation destination. 
 
 When the VCOs modulate other VCOs, it's called Frequency Modulation -
 FM.
@@ -180,11 +176,7 @@ modulates neither filter when the knob is in its center detent.
 or VCF 1. Again, it does neither when the knob is centered in the
 detent.
 
-For the bi-polar knobs to be used in the modulation matrix, you will
-need to turn the knob in the direction that you want it to modulate when
-assigning it. There is a small dead zone on either side of the center
-detent that will allow you to have no modulation but still allow the
-knob position to be sensed.
+For the bi-polar knobs to be used in the modulation matrix, you will need to turn the knob in the direction that you want it to modulate when assigning it. There is a small dead zone on either side of the center detent that will allow you to have no modulation but still allow the knob position to be sensed.
 
 VCO Sync
 --------
@@ -196,7 +188,7 @@ harmonic sync sweep sound.
 Voice Mode
 ----------
 
-![](images/media/image31.png)
+![](/images/media/image31.png)
 
 There are 3 VOICE modes that are available on the MatrixBrute. These
 modes allow you to play the synth in ways beyond the standard monophonic
@@ -204,22 +196,15 @@ way.
 
 ### Monophonic
 
-Monophonic is the standard voice mode. In this mode, all the oscillators
-will play when you press a key ( or send MIDI or CV information ). The
-voice path is laid out as you see it in the graphics below.
+Monophonic is the standard voice mode. In this mode, all the oscillators will play when you press a key ( or send MIDI or CV information ). The voice path is laid out as you see it in the graphics below.
 
 ### Paraphonic
 
-Paraphonic mode allows you to play multiple notes at one time. It splits
-the three oscillators, one per note played, so that you can play up to 3
-notes at once. Paraphonic differs from polyphonic in that all 3 of the
-oscillators share the same filters and VCA settings.
+Paraphonic mode allows you to play multiple notes at one time. It splits the three oscillators, one per note played, so that you can play up to 3 notes at once. Paraphonic differs from polyphonic in that all 3 of the oscillators share the same filters and VCA settings.
 
 ### Duo Split mode
 
-Duo split mode allows you to split the keyboard and have 2 completely
-different sounds played on each half. To accomplish this, we split the
-voice up as shown in the diagram below.
+Duo split mode allows you to split the keyboard and have 2 completely different sounds played on each half. To accomplish this, we split the voice up as shown in the diagram below. 
 
 #### Upper part
 
@@ -246,12 +231,12 @@ mode buttons.)
 Set the octave of the lower part by pressing **MODE** button and use
 the Octave &lt;- -&gt; buttons to transpose it.
 
-![](images/media/image32.png)
+![](/images/media/image32.png)
 
 Wheels
 ------
 
-![](images/media/image31.png)
+![](/images/media/image31.png)
 
 - **Wheels** As on most keyboards, the MatrixBrute's pitch wheel springs
 back to the center position (no pitch shift), while the mod wheel is
@@ -267,7 +252,7 @@ maximum of ± 1 octave. The center position is up or down a fifth.
 Keyboard Performance Controls
 -----------------------------
 
-![](images/media/image33.png)
+![](/images/media/image33.png)
 
 - **Pitch and Modulation wheels** - Please refer to the previous section
 (WHEELS) to set the pitch bend range and Modulation wheel assignment.
@@ -290,7 +275,7 @@ the way to over two seconds when it's all the way up.
 retriggering the envelopes on every key on. The following settings apply
 to each note sounding in the current voice mode. In Monophonic they
 apply to the single sound, and in Paraphonic and Duo-Split they apply to
-the one being played **\[see page \#\]**.
+the one being played. [See the Voice Mode section ](#voice-mode).
 
 - *On -* This will only retrigger the envelope after all notes have been
 released. Holding a note while playing the next one, before releasing
@@ -320,23 +305,29 @@ notes are cut off;
 
 **Key Hold** – Simulates the effect of holding a note forever. It plays
 the last note you triggered, no matter how much time has passed, and
-holds it. IT does not affect the envelopes so sounds with no sustain
+holds it. It does not affect the envelopes so sounds with no sustain
 will not actually sound beyond the decay time. This is also used to hold
 an arpeggiation on.
 
 Macro Knobs
 -----------
 
-![](images/media/image34.png)
+![Macro Knobs]({
+    "img":{
+        "link":"/images/media/image34.png",
+        "class":"col-xs-4 col-xs-offset-4",
+        "title":"Macro Knobs"
+        }
+})
 
 **M1, M2, M3, and M4** knobs are modulation sources that appear the MOD
-Matrix **\[see p\#\]** on rows M, N, O, and P. They're designed to be
+Matrix ( [see Mode Matrix Section](#mod-mode) ) on rows M, N, O, and P. They're designed to be
 convenient performance controls.
 
 Each MACRO knob can modulate multiple MatrixBrute parameters, and they
 all send MIDI Continuous Controllers (CC\#11, 2, 3, 4 in order).
 
-![](images/media/image35.png)
+![](/images/media/image35.png)
 
 #### Resetting Macro’s to 0
 
@@ -345,7 +336,13 @@ Press **Panel + \[M1 - M4\]** to reset the MACRO knob to 0.
 Mixer
 -----
 
-![](images/media/image36.png)
+![Mixer Knobs]({
+    "img":{
+        "link":"/images/media/image36.png",
+        "class":"col-xs-4 col-xs-offset-4",
+        "title":"Mixer Knobs"
+        }
+})
 
 The levels of the MatrixBrute's five potential sound sources - the VCOs,
 Noise generator, and External input - are set here. Sources must be sent
@@ -354,11 +351,11 @@ to either or both filters to be heard.
 (If you've assigned a source to one of the filters and still hear
 nothing, the cutoff frequency may be outside its range.)
 
-All five inpiuts to the mixer have the same features:
+All five inputs to the mixer have the same features:
 
 - **Level** \[VCO 1, VCO 2, VCO 3, Noise, External\]
 
-- **Filter** **routing -** Press the button repeatedly to assign the sound
+- **Filter routing -** Press the button repeatedly to assign the sound
 source to VCF 1, VCF 2, both, or neither. If the filters are in series,
 the VCOs can only be assigned to VCF 1 (or turned off).
 
@@ -368,7 +365,7 @@ either the upper (Steiner) or lower (Ladder) section of the keyboard.
 LFOs 1 and 2
 ------------
 
-![](images/media/image37.png)
+![](/images/media/image37.png)
 
 The two LFOs (low frequency oscillators) are modulators that can be
 routed to add movement to pretty much any parameter on the MatrixBrute.
@@ -377,7 +374,7 @@ ranging from about one cycle every 18 seconds up to 100Hz. They're
 useful for creating all kinds of sounds, from vibrato to filter sweeps
 to pitch changes; their effects range from subtle to wild.
 
-![](images/media/image38.png)
+![](/images/media/image38.png)
 
 Seven waveforms are available, from left to right: sine, triangle,
 square, reverse sawtooth, sawtooth, S&H, and low frequency random.
@@ -386,12 +383,12 @@ The pictures of these waveforms show exactly how they behave, for
 example the square wave turns on and off abruptly and the triangle ramps
 up and back down. You can hear this very clearly at slow rates.
 
-- **Wave** **Selection -** &lt; and &gt; scroll left and right through the
+- **Wave Selection -** &lt; and &gt; scroll left and right through the
 waveforms.
 
 LFO 1 and 2 are the same except for one similar parameter (Phase vs.
-Delay), and you patch them into the signal path at the Matrix **\[insert
-page number when available\]**.
+Delay), and you patch them into the signal path at the Matrix. [See
+Matrix Section](#the-matrix).
 
 - **Phase \[LFO 1 only\]** adjusts where in the LFO's wave cycle it starts
 relative to the note trigger, either early or late. The knob has center
@@ -404,7 +401,7 @@ gradually.
 knob flashes with it (until the setting gets too high and the light
 remains solid).
 
-- **Seq-Sync** locks the LFO's tempo to the Sequencer **\[page number\]**,
+- **Seq-Sync** locks the LFO's tempo to the Sequencer [See Sequencer Section](#sequencer-mode),
 which in turn can be synced to various sources.
 
 - **Retrig** cycles through the three choices for how the LFOs respond to
@@ -426,10 +423,10 @@ Filters
 
 **Steiner Filter (VCF 1) and Ladder Filter (VCF 2)**
 
-![](images/media/image39.png)
+![](/images/media/image39.png)
 
 Filters remove frequencies from the sound sources coming from the Mixer
-**\[page number\]**, and they are a primary component in the subtractive
+[see Mixer Section](#mixer), and they are a primary component in the subtractive
 synthesis technique used by the MatrixBrute and all analog synths.
 Modulating them varies the timbre of the sound over time. With very high
 Resonance levels they can self-oscillate, becoming another sound source.
@@ -440,10 +437,7 @@ MatrixBrute features two multimode Voltage-Controlled Filters (VCFs):
 '70s. It has a unique character that becomes apparent immediately at
 relatively pronounced settings.
 
-- The other filter is a classic **Ladder Filter (VCF 2)**, a famous
-standard-bearing design known for its rich, thick sound; unlike the
-original, this one is gain-compensated to avoid the dip in volume that
-you find at higher resonance level. These filters play a big role in the
+- The other filter is a classic **Ladder Filter (VCF 2)**, a famous standard-bearing design known for its rich, thick sound; unlike the original, this one is gain-compensated to avoid the dip in volume that you find at higher resonance level. This one also is a multimode filter and has both 12dB per octave and 24dB per octave options. These filters play a big role in the
 MatrixBrute's character.
 
 Both filters have the same basic parameters, but the Steiner Filter has
@@ -485,35 +479,25 @@ Usually 12dB sounds brighter.
 - **Drive** adjusts how hard the signal hits the filter. The higher you
 set it, the more pleasant distortion you get.
 
-**\[need better explanation of Brute Factor\]**
+- **Brute Factor™** is Arturia secret sauce. It ranges from warming up the low end to creating a monstrous growl when turned up. The exact effect depends on how it's interacting with other settings.
 
-- **Brute Factor™** is Arturia secret sauce. It ranges from warming up the
-low end to creating a monstrous growl when turned up. The exact effect
-depends on how it's interacting with other settings.
+- **Resonance** emphasizes the frequencies at the point of the cutoff, because they're fed back into the circuit. Higher resonance levels can cause the filters to self-oscillate. NOTE: The Steiner filter does not track the keyboard well over a wide range by nature. For better pitch to octave tracking, using the Ladder filter.
 
-- **Resonance** emphasizes the frequencies at the point of the cutoff,
-because they're fed back into the circuit. Higher resonance levels can
-cause the filters to self-oscillate.
+- **Env 1 Amt** sets how much Envelope 1 (the one dedicated to the VCFs) modulates the Cutoff frequency. This control allows for both positive and negative modulation amounts.
 
-- **Env 1 Amt** sets how much Envelope 1 (the one dedicated to the VCFs)
-modulates the Cutoff frequency. This control allows for both positive
-and negative modulation amounts.
-
-- **Routing** chooses between the two filters running in parallel or
-having VCF 1 feed VCF 2. This unique control allows you to alter the
-voice path and create a wealth of new sounds.
+- **Routing** chooses between the two filters running in parallel or having VCF 1 feed VCF 2. This unique control allows you to alter the voice path and create a wealth of new sounds. 
 
 Envelopes
 ---------
 
-![](images/media/image40.png)
+![]({
+    "img":{
+        "link":"/images/media/image40.png",
+        "class":"col-xs-4 col-xs-offset-4"
+        }
+})
 
-Envelopes are adjustable modulators that shape the voltage over time.
-MatrixBrute has two 4-stage, ADSR (Attack Decay Sustain Release)
-envelopes, plus a third one (ENV 3) which adds a Delay phase before the
-ADSR (this is all explained below). Each envelope has a "gate" LED that
-show when a gate is receive and will fade out to show when the release
-stage is still active.
+Envelopes are adjustable modulators that shape the voltage over time. MatrixBrute has two 4-stage, ADSR (Attack Decay Sustain Release) envelopes, plus a third one (ENV 3) which adds a Delay phase before the ADSR (this is all explained below). Each envelope has a "gate" LED that show when a gate is receive and will fade out to show when the release stage is still active.
 
 You can add assignments to the envelopes in the Matrix, but by default:
 
@@ -525,16 +509,19 @@ volume level of the sound;
 
 - **ENV 3** is freely assignable in the Matrix.
 
-![](images/media/image41.png)
+![]({
+    "img":{
+        "link":"/images/media/image20.png",
+        "class":"col-xs-41"
+        }
+})
 
 
 In all three envelopes:
 
-- **Attack** sets the time, from 2.5ms to 2.5 seconds, the voltage takes
-to reach its initial level;
+- **Attack** sets the time, from 2ms to more than 10 seconds, the voltage takes to reach its initial level;
 
-- **Decay** adjusts the time, again from 2.5ms to 2.5 seconds, it takes
-the voltage to go from its initial level to the Sustain level;
+- **Decay** adjusts the time, again from 2ms to more than 10 seconds, it takes the voltage to go from its initial level to the Sustain level;
 
 - **Sustain** is the level the signal settles at after it decays. This
 level is usually lower than the initial level (hence "decay"), however
@@ -544,8 +531,6 @@ percussive sounds, in which case the Release setting has no effect.
 
 - **Release** is the time it takes the voltage to fade all the way down
 after you release the key that's triggering the sound.
-
-**\[BRUNO - please correct the envelope times. Thanks, NB\]**
 
 - **Velo/VCF and Velo/VCA (ENV 1 and ENV 1 only)**: You can tune ENV 1's
 and ENV 2's response to key velocity, i.e. the "louder" you play, the
@@ -567,23 +552,16 @@ anything until it's assigned in the Matrix. Second, it runs through its
 stages independently of keyboard velocity (although you can modulate its
 stages in the Matrix).
 
- - *Delay (ENV 3 only)* allows you to start ENV3 envelope after the key
-trigger; all the way down is no delay.
-
-**\[Specify the delay times?\]**
+ - *Delay (ENV 3 only)* allows you to start ENV3 envelope after the key trigger; all the way down is no delay. The delay time is from 2mSec to over 10 Seconds.
 
 Analog Effects
 --------------
 
-![](images/media/image42.png){}
+![](/images/media/image42.png)
 
-MatrixBrute features Analog Effects with 5 different modes on the
-output.
+MatrixBrute features Analog Effects with 5 different modes on the output. 
 
-The Analog Effects are all based on classic Bucket Brigade Devices
-(BBD’s). The technical differences between them are a function of the
-delay times and how or whether they're modulated. Note that all the
-knobs can be modulation destinations in the Matrix.
+The Analog Effects are all based on classic Bucket Brigade Devices (BBD’s). The technical differences between them are a function of the delay times and how or whether they're modulated. Note that all the knobs can be modulation destinations in the Matrix.
 
 **Mode** cycles through the five effects, which are tuned with the five
 knobs at the top of the Analog Effects section:
@@ -603,23 +581,19 @@ rich, thickening sound.
 Typically, flangers have an "airplane" sound, and unlike choruses the
 effect often moves in and out.
 
-- *Reverberator* is a unique analog space effect, produced by
-recirculating the delays with varying delay times.
+- *Reverberator* is a unique analog space effect, produced by recirculating the delays with varying delay times.
 
 The five effect-modifying parameters:
 
-- **Delay Time** has different ranges in different Modes. Longer delay
-times are achieved with clockwise turns.
+- **Delay Time** has different ranges in different Modes. Longer delay times are achieved with clockwise turns.
 
 - **Regeneration** is a level control for the amount of the signal that
 gets fed back into the processor. Things can get wild - in both good and
 bad ways - if you turn it up.
 
-- **Tone/Rate** This control doubles as a tone or lowpass filter control
-for the delays, and as a rate control in the Chorus and Flanger modes.
+- **Tone/Rate** This control doubles as a tone or lowpass filter control for the delays, and as a rate control in the Chorus and Flanger modes. 
 
 - **Width/Depth** specifies the amount of stereo field in the stereo
 delay/reverberator, and the modulation depth of the LFO in the chorus
 and flanger.
-
 

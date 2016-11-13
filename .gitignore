@@ -16,3 +16,13 @@
 
 # Ignore .DS_store file
 .DS_Store
+
+# Ignore IDEs folders
+/.idea
+/.vscode
+
+# Ignore local gems folders
+/vendor
+
+# Ignore Gemfile lock
+Gemfile.lock
